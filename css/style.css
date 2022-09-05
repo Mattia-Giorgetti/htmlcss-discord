@@ -1,0 +1,71 @@
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+html {
+    font-family: Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.blue {
+    color: rgb(62, 96, 216);
+}
+.black {
+    color:rgb(36, 39, 42);
+}
+.gray {
+    color: rgb(246, 246, 246);
+}
+.lilla-btn {
+    color: rgb(146, 160, 220);
+}
+.lilla-txt {
+    color: rgb(119, 136, 212);
+}
+
+.debug {
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+/* NAV SECTION  */
+header {
+    background-color: rgb(62, 96, 216);
+}
+.nav-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.button {
+    background-color: white;
+    color:rgb(36, 39, 42);
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+ul {
+    list-style: none;
+}
+.flexbox {
+    display: flex;
+    flex-grow: row wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+header nav ul {
+    min-width: 550px; 
+}
+
+.nav-container li a {
+    color: white;
+}
+
+/* HERO SECTION  */
+
