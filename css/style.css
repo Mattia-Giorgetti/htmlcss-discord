@@ -90,6 +90,7 @@ div.hero-container p {
     font-size: 20px;
     line-height: 35px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .white-btn {
     background-color: white;
@@ -114,22 +115,38 @@ div.hero-container p {
 
 /* MAIN  */
 
+/* Section 1  */
+
 .flex-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 150px;
+    gap: 200px;
+    
+}
+.reverse {
+    flex-direction: row-reverse;
 }
 
-section {
+.section-white {
     width: 100%;
     background-color: white;
 }
-.wrap-1 {
-    height: 800px;     /* da cambiare quando si inserisce la wave  */
+.section-gray {
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+}
+.wrap-white {
+    height: 700px;     /* da cambiare quando si inserisce la wave  */
     max-width: 80%;
     margin: auto;
     background-color: white;
+}
+.wrap-gray {
+    height: 680px;
+    max-width: 80%;
+    margin: auto;
+    background-color: rgb(246, 246, 246);
 }
 
 h2 {
@@ -137,14 +154,23 @@ h2 {
     width: 350px;
     padding-top: 100px;
 }
-.wrap-1 img {
+.wrap-white img {
     padding: 0 50px;
 }
-.wrap-1 p {
-    width: 350px;
-    margin-top: 40px;
+.flex-section p {
+    width: 360px;
+    margin-top: 30px;
     font-size: 20px;
     line-height: 35px;
+}
+
+/* Section 2  */
+
+.wrap-gray.reverse h2 {
+    padding-top: 0px;
+}
+.wrap-gray.reverse div {
+    padding-bottom: 100px;
 }
 
 
