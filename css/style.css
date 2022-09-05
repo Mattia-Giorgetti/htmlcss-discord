@@ -114,4 +114,38 @@ div.hero-container p {
 
 /* MAIN  */
 
+.flex-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+}
+
+section {
+    width: 100%;
+    background-color: white;
+}
+.wrap-1 {
+    height: 800px;     /* da cambiare quando si inserisce la wave  */
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+h2 {
+    font-size: 48px;
+    width: 350px;
+    padding-top: 100px;
+}
+.wrap-1 img {
+    padding: 0 50px;
+}
+.wrap-1 p {
+    width: 350px;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
 
