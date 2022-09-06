@@ -12,26 +12,10 @@ body {
 a {
     text-decoration: none;
 }
-
-.blue {
-    color: rgb(53, 93, 224);
-}
-.black {
-    color:rgb(36, 39, 42);
-}
-.gray {
-    color: rgb(246, 246, 246);
-}
-.lilla-btn {
-    color: rgb(146, 160, 220);
-}
-.lilla-txt {
-    color: rgb(119, 136, 212);
-}
-
-.debug {
-    border: 1px solid black;
-    min-height: 100px;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* NAV SECTION  */
@@ -174,7 +158,7 @@ h2 {
     font-size: 48px;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 #h2-width + p {
     text-align: center;
@@ -213,4 +197,64 @@ h3 {
 }
 
 /* FOOTER  */
+
+footer {
+    background-color: rgb(36, 39, 42); 
+    min-height: 200px;
+}
+.nav-footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(119, 136, 212);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+h4 {
+    color: rgb(119, 136, 212);
+    font-size: 30px;
+} 
+.foot-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ul-title {
+    color: rgb(119, 136, 212);
+    font-size: 20px;
+}
+.nav-footer li {
+    color: white;
+}
+.nav-footer ul {
+    line-height: 30px;
+    font-size: 18px;
+}
+.lang-select {
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.lang-select img {
+    max-width: 20px;
+}
+.social-icons i {
+    color: white;
+    margin-top: 25px;
+    padding-right: 15px;
+}
+
+/* Last Section  */
+.footer-last {
+    max-width: 1170px;
+    margin: 20px auto;
+    min-height: 100px;
+}
+.footer-last img {
+    float: left;
+}
+.footer-last a {
+    float: right;
+    color: white;
+    background-color: rgb(119, 136, 212);
+}
 
