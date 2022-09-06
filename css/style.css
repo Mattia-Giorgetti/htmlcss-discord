@@ -9,9 +9,11 @@
 body {
     font-family: Helvetica, sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 .clearfix::after {
     content: "";
     display: table;
@@ -20,32 +22,37 @@ a {
 
 /* NAV SECTION  */
 header {
-    background-color: rgb(53, 93, 224)
+    background-color: #255EE8;
 }
+
 .nav-container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 10px 0;
 }
+
 .button {
     background-color: white;
-    color:rgb(36, 39, 42);
+    color: rgb(36, 39, 42);
     border-radius: 20px;
     padding: 8px 12px;
     font-size: 13px;
-    
+
 }
+
 ul {
     list-style: none;
 }
+
 .flexbox {
     display: flex;
     flex-grow: row wrap;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
+
 header nav ul {
-    min-width: 550px; 
+    min-width: 550px;
 }
 
 .nav-container li a {
@@ -58,17 +65,20 @@ header nav ul {
     background-size: cover;
     height: 560px;
 }
+
 .hero-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
+
 h1 {
     color: white;
-    font-size: 50px; 
+    font-size: 50px;
     padding-top: 110px;
     padding-bottom: 40px;
 }
+
 div.hero-container p {
     color: white;
     font-size: 20px;
@@ -76,14 +86,16 @@ div.hero-container p {
     margin-bottom: 40px;
     text-align: center;
 }
+
 .white-btn {
     background-color: white;
-    color:rgb(36, 39, 42);
+    color: rgb(36, 39, 42);
     border-radius: 25px;
     padding: 16px 32px;
     font-size: 20px;
     margin-left: 50px;
 }
+
 .black-btn {
     background-color: rgb(36, 39, 42);
     color: white;
@@ -92,12 +104,16 @@ div.hero-container p {
     font-size: 20px;
     margin-left: 25px;
 }
+
 .hero-container i {
     font-size: 15px;
     margin-right: 8px;
 }
 
 /* MAIN  */
+main img {
+    min-width: 400px;
+}
 
 /* Section 1  */
 
@@ -107,6 +123,7 @@ div.hero-container p {
     justify-content: space-between;
     align-items: center;
 }
+
 .reverse {
     flex-direction: row-reverse;
 }
@@ -115,18 +132,21 @@ div.hero-container p {
     width: 100%;
     background-color: white;
 }
+
 .section-gray {
     width: 100%;
     background-color: rgb(246, 246, 246);
 }
+
 .wrap-white {
-    height: 700px;     /* da cambiare quando si inserisce la wave  */
+    height: 700px;
     max-width: 70%;
     margin: auto;
     background-color: white;
 }
+
 .wrap-gray {
-    min-height: 680px;
+    min-height: 600px;
     max-width: 70%;
     margin: auto;
     background-color: rgb(246, 246, 246);
@@ -137,6 +157,7 @@ h2 {
     width: 350px;
     padding-top: 100px;
 }
+
 .flex-section p {
     width: 360px;
     margin-top: 30px;
@@ -149,8 +170,10 @@ h2 {
 .wrap-gray.reverse h2 {
     padding-top: 0px;
 }
+
 .wrap-gray.reverse div {
     padding-bottom: 100px;
+    padding-left: 60px;
 }
 
 /* Section 4  */
@@ -160,37 +183,46 @@ h2 {
     text-align: center;
     margin-bottom: 35px;
 }
-#h2-width + p {
+
+#h2-width+p {
     text-align: center;
     font-size: 20px;
 }
+
 #big-pic {
     display: block;
     margin: auto;
     padding: 20px 0;
+    min-width: 400px;
 }
+
 h3 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
+
 .stars {
     width: 50%;
     margin: 0 auto;
     min-height: 300px;
     text-align: center;
 }
+
 .stars img {
     display: block;
     margin: 0 auto;
+    width: 575px;
 }
+
 .lilla-btn {
-    background-color:rgb(146, 160, 220);
-    color:white;
+    background-color: #7983F5;
+    color: white;
     border-radius: 25px;
     padding: 16px 32px;
     font-size: 20px;
 }
+
 .stars i {
     font-size: 15px;
     margin-right: 8px;
@@ -199,9 +231,10 @@ h3 {
 /* FOOTER  */
 
 footer {
-    background-color: rgb(36, 39, 42); 
+    background-color: rgb(36, 39, 42);
     min-height: 200px;
 }
+
 .nav-footer {
     max-width: 1170px;
     margin: 0 auto;
@@ -209,38 +242,56 @@ footer {
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
+.nav-footer>div {
+    flex-grow: 2;
+}
+
 h4 {
     color: rgb(119, 136, 212);
     font-size: 30px;
-} 
+    display: inline-block;
+    width: 225px;
+}
+
 .foot-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .ul-title {
     color: rgb(119, 136, 212);
     font-size: 20px;
+    font-weight: 600;
 }
+
 .nav-footer li {
     color: white;
 }
+
 .nav-footer ul {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 17px;
 }
+
 .lang-select {
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
     cursor: pointer;
+    font-size: 15px;
 }
+
 .lang-select img {
     max-width: 20px;
 }
+
 .social-icons i {
     color: white;
-    margin-top: 25px;
+    font-size: 25px;
+    margin-top: 30px;
     padding-right: 15px;
+    cursor: pointer;
 }
 
 /* Last Section  */
@@ -249,12 +300,63 @@ h4 {
     margin: 20px auto;
     min-height: 100px;
 }
+
 .footer-last img {
     float: left;
 }
+
 .footer-last a {
     float: right;
     color: white;
     background-color: rgb(119, 136, 212);
 }
 
+/* BONUS  */
+
+/* Wave  */
+
+.wave {
+    color: rgb(246, 246, 246);
+    display: block;
+    margin: -5px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* Hover  */
+.nav-container,
+.footer-last img {
+    cursor: pointer;
+}
+
+.nav-container:hover li:hover {
+    text-decoration: underline;
+}
+
+.button:hover,
+.white-btn:hover {
+    color: rgb(119, 136, 212);
+    box-shadow: 0px 1px 16px 0px rgb(57, 37, 173);
+}
+
+.black-btn:hover {
+    background-color: #36393E;
+    box-shadow: 0px 1px 10px 0px black;
+}
+
+.lilla-btn:hover {
+    background-color: rgb(146, 160, 220);
+    box-shadow: -1px 2px 8px rgb(163, 163, 163);
+}
+
+.nav-footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-last a:hover {
+    background-color: rgb(146, 160, 220);
+    color: white;
+}
