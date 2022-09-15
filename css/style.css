@@ -46,7 +46,6 @@ ul {
 
 .flexbox {
     display: flex;
-    flex-grow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -103,6 +102,7 @@ div.hero-container p {
     padding: 16px 32px;
     font-size: 20px;
     margin-left: 25px;
+    display: inline-block;
 }
 
 .hero-container i {
@@ -200,6 +200,7 @@ h3 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    
 }
 
 .stars {
@@ -333,17 +334,18 @@ h4 {
 
 .nav-container:hover li:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .button:hover,
 .white-btn:hover {
     color: rgb(119, 136, 212);
-    box-shadow: 0px 1px 16px 0px rgb(57, 37, 173);
+    box-shadow: 1px 2px 10px 0px rgb(57, 37, 173);
 }
 
 .black-btn:hover {
     background-color: #36393E;
-    box-shadow: 0px 1px 10px 0px black;
+    box-shadow: 0px 1px 6px 0px black;
 }
 
 .lilla-btn:hover {
@@ -359,4 +361,13 @@ h4 {
 .footer-last a:hover {
     background-color: rgb(146, 160, 220);
     color: white;
+}
+.button, .white-btn, .black-btn, .lilla-btn, .footer-last a {
+    transition: all 0.4s linear;
+}
+.social-icons i {
+    transition: all 0.6s ease;
+}
+.social-icons i:hover {
+    transform: scale(1.3);
 }
